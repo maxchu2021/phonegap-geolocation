@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=320; user-scalable=no" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>Minimal AppLaud App</title>
+        <link rel="styleSheet" href="css/index.css"/>
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    </head>
+    <body>
+        <h2>Geolocation</h2>
+        <blockquote>
+            <p>The <code>geolocation</code> object provides access to the device's GPS sensor.</p>
+        </blockquote>
+        <h4 class="help"><b>Toggle</b> to stop/start
+        geolocation watch.
+        <br/><b>Get Current</b> for one-time geolocation reading.</h4>
+        <a class="btn deux" onclick="toggleWatchPosition();">Toggle</a>
+        <a class="btn deux" onclick="getCurrentPosition();">Get Current</a>
+        <div class="result-block">
+            <span id="cur_position"></span>
+        </div>
+        <img id="map" alt="Location Map"/>
+        <script src="js/geolocation.js"></script>
+    </body>
+</html>
